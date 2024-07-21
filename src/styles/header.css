@@ -1,0 +1,8 @@
+.menu {
+    color: white;
+}
+
+.menu_selected {
+    color: white;
+    font-weight: bold;
+}
