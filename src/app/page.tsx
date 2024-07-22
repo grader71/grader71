@@ -6,7 +6,8 @@ const home = () => {
   return (
     <div>
       <Header selected = "Home" username = "PakinDioxide"/>
-      <h1>HELLO WORLD </h1>
+      <p className="topic">Grader 71</p>
+      <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis nemo quam cupiditate officiis ipsam expedita accusantium at veniam. Tempora labore deserunt voluptatum nulla culpa est at aliquid eligendi aspernatur similique!</h2>
     </div>
   )
 }

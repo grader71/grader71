@@ -3,7 +3,7 @@
 .menu_selected,
 .account_menu_selected {
     color: #32365c;
-    font-size: 15px;
+    font-size: 17px;
     text-align: center;
     text-decoration: none;
     margin-left: 30px;
@@ -11,7 +11,7 @@
 
 .menu_selected,
 .account_menu_selected {
-    font-weight: 800;
+    font-weight: bold;
 }
 
 .account_menu,

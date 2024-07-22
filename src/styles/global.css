@@ -11,7 +11,19 @@ div {
     margin-right: auto;
 }
 
-h1 {
+
+h1,
+h2,
+p {
     color: pink;
     text-align: center;
+}
+
+.topic {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.text_highlight {
+    color: coral;
 }
