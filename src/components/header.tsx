@@ -8,10 +8,10 @@ const Header = ({ selected, username }: { selected: string, username: string }) 
                 (logo)
             </div> */}
             <Link className={"Home" === selected ? "menu_selected" : "menu"} href="/">Home</Link>
-            <Link className={"Problems" === selected ? "menu_selected" : "menu"} href="/Problems">Problems</Link>
-            <Link className={"Submissions" === selected ? "menu_selected" : "menu"} href="/Submissions">Submissions</Link>
-            <Link className={"About" === selected ? "menu_selected" : "menu"} href="/About">About</Link>
-            <Link className={"Profile" === selected ? "account_menu_selected" : "account_menu"} href="/Proflie">{username}</Link>
+            <Link className={"Problems" === selected ? "menu_selected" : "menu"} href="/problems">Problems</Link>
+            <Link className={"Submissions" === selected ? "menu_selected" : "menu"} href="/submissions">Submissions</Link>
+            <Link className={"About" === selected ? "menu_selected" : "menu"} href="/about">About</Link>
+            <Link className={"Profile" === selected ? "account_menu_selected" : "account_menu"} href="/account">{username}</Link>
         </div>
     );
 }
