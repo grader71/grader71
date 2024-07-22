@@ -20,11 +20,12 @@
     align-items: center;
     height: 75px;
     position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
+    top: 25px;
+    left: 25px;
+    right: 25px;
     border-color: rgb(237, 118, 118);
-    border-style: solid;
+    /* border-style: solid; */
+    border-radius: 15px;
     display: flex;
     flex-direction: row;
 }

@@ -1,6 +1,6 @@
 import '@/styles/header.css'
 
-const header = ({ selected, username }: { selected: string, username: string }) => {
+const Header = ({ selected, username }: { selected: string, username: string }) => {
     return (
         <div className="navigation_bar">
             <div className="logo">
@@ -25,4 +25,4 @@ const header = ({ selected, username }: { selected: string, username: string }) 
     );
 }
 
-export default header
+export default Header
