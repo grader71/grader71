@@ -16,7 +16,7 @@
 
 .account_menu,
 .account_menu_selected {
-    position: relative;
+    position: absolute;
     right: 30px;
 }
 
@@ -31,13 +31,11 @@
 .navigation_bar {
     background-color: pink;
     align-items: center;
+    position: absolute;
     height: 40px;
-    width: 1250px;
-    top: 25px;
+    top: 30px;
     left: 25px;
     right: 25px;
-    margin-left: auto;
-    margin-right: auto;
     border-color: rgb(237, 118, 118);
     border-radius: 7px;
     display: flex;
