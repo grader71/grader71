@@ -16,7 +16,7 @@
 
 .account_menu,
 .account_menu_selected {
-    position: absolute;
+    position: relative;
     right: 30px;
 }
 
