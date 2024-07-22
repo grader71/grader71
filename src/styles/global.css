@@ -1,12 +1,18 @@
 body {
     background-color: #32365c;
     height: 3000px;
+    padding-top: 25px;
 }
 
 div {
     font-family: "Poppins", Arial;
+    width: 1250px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 h1 {
-    
+    color: pink;
+    margin-left: auto;
+    margin-right: auto;
 }
