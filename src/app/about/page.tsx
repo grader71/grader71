@@ -5,7 +5,7 @@ import '@/styles/global.css'
 const home = () => {
   return (
     <div>
-      <Header selected = "Home" username = "PakinDioxide"/>
+      <Header selected = "About" username = "PakinDioxide"/>
       <h1>HELLO ABOUT </h1>
     </div>
   )
