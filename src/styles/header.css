@@ -32,7 +32,7 @@
     background-color: pink;
     align-items: center;
     height: 75px;
-    position: fixed;
+    /* position: fixed; */
     top: 25px;
     left: 25px;
     right: 25px;
