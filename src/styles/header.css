@@ -17,7 +17,7 @@
 .account_menu,
 .account_menu_selected {
     position: absolute;
-    margin-right: 30px;
+    right: 30px;
 }
 
 .logo {
