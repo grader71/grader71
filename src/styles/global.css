@@ -6,13 +6,18 @@ body {
 
 div {
     font-family: "Poppins", Arial;
+}
+
+.width_normal {
     width: 1250px;
     margin-left: auto;
     margin-right: auto;
 }
 
-p,
-h2 {
+
+h1,
+h2,
+p {
     color: pink;
     text-align: center;
 }
@@ -24,4 +29,8 @@ h2 {
 
 .text_highlight {
     color: coral;
+}
+
+button:hover {
+    cursor: pointer;
 }
