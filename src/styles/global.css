@@ -11,7 +11,8 @@ div {
     margin-right: auto;
 }
 
-p {
+p,
+h2 {
     color: pink;
     text-align: center;
 }
