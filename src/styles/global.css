@@ -4,7 +4,8 @@ body {
     padding-top: 60px;
 }
 
-div {
+div,
+button {
     font-family: "Poppins", Arial;
 }
 
@@ -13,7 +14,6 @@ div {
     margin-left: auto;
     margin-right: auto;
 }
-
 
 h1,
 h2,
