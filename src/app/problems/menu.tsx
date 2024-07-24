@@ -1,6 +1,5 @@
 'use client';
 import React, { useState } from 'react';
-import Header from '@/components/header';
 import '@/styles/global.css';
 import '@/styles/problems.css';
 import { useSearchParams } from 'next/navigation';

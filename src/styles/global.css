@@ -27,6 +27,16 @@ p {
     font-weight: bold;
 }
 
+.mid_topic {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.small_topic {
+    font-size: 20px;
+    font-weight: bold;
+}
+
 .text_highlight {
     color: coral;
 }
