@@ -1,5 +1,5 @@
 'use client';
-import React, { useState } from 'react'
+import React, { useState , Suspense} from 'react'
 import Header from '@/components/header'
 import '@/styles/global.css'
 import '@/styles/problems.css'
@@ -12,7 +12,7 @@ const Problems = () => {
     <div className='width_small'>
       <Header selected = "Problems" username = "PakinDioxide"/>
       <p className='topic'>Problems</p>
-      <Menu />
+      <Suspense><Menu /></Suspense>
     </div>
   )
 }
