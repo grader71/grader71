@@ -29,21 +29,19 @@ const Menu = () => {
     const level = searchParams.get('level') || '';
 
     return (
-        <div className='problems_box'>
-            <div className='problems_menu_box'>
-                {
-                    levels.map(levelItem => {
-                        const href = levelItem.value === '' ? '/problems' : `/problems?level=${levelItem.value}`;
-                        return (
-                            <Link
-                                key={levelItem.value}
-                                href={href}
-                                className={level === levelItem.value ? 'problems_menu_selected' : 'problems_menu'}
-                            >{levelItem.label}</Link>
-                        );
-                    })
-                }
-            </div>
+        <div className='problems_menu_box'>
+            {
+                levels.map(levelItem => {
+                    const href = levelItem.value === '' ? '/problems' : `/problems?level=${levelItem.value}`;
+                    return (
+                        <Link
+                            key={levelItem.value}
+                            href={href}
+                            className={level === levelItem.value ? 'problems_menu_selected' : 'problems_menu'}
+                        >{levelItem.label}</Link>
+                    );
+                })
+            }
         </div>
     );
 };

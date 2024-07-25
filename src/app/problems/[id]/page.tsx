@@ -12,7 +12,9 @@ const Problems = ({ params } : { params: {id: string }}) => {
     <div className='width_small'>
       <Header selected = "Problems" username = "PakinDioxide"/>
       <p className='topic'>Problems Name <span className='small_topic'>({problem_id})</span></p>
-      <Suspense><ProblemMenu problem_id={problem_id} selected=''/></Suspense>
+      <div className='problems_box'>
+        <Suspense><ProblemMenu problem_id={problem_id} selected=''/></Suspense>
+      </div>
     </div>
   )
 }

@@ -10,7 +10,9 @@ const Problems = () => {
     <div className='width_small'>
       <Header selected = "Problems" username = "PakinDioxide"/>
       <p className='topic'>Problems</p>
-      <Suspense><Menu /></Suspense>
+      <div className='problems_box'>
+        <Suspense><Menu /></Suspense>
+      </div>
     </div>
   )
 }
