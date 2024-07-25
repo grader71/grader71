@@ -29,7 +29,7 @@ const ProblemMenu = ({ problem_id , selected} : { problem_id : string, selected 
             <div className='problems_menu_box'>
                 {
                     menues.map(menu => {
-                        const href = menu.value === '' ? `/problems/${problem_id}` : `/problems/${problem_id}/${menu.value}`;
+                        const href = `/problems/${problem_id}/${menu.value}`;
                         return (
                             <Link
                                 key={menu.value}
