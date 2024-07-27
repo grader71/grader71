@@ -1,12 +1,11 @@
 body {
+    color: pink;
     background-color: #32365c;
-    height: 3000px;
     padding-top: 60px;
-}
-
-div,
-button {
-    font-family: "Poppins", Arial;
+    font-family: "Poppins", "Prompt", Arial;
+    font-weight: normal;
+    text-align: center;
+    overflow: auto;
 }
 
 .width_normal {
@@ -19,13 +18,6 @@ button {
     width: 1000px;
     margin-left: auto;
     margin-right: auto;
-}
-
-h1,
-h2,
-p {
-    color: pink;
-    text-align: center;
 }
 
 .topic {
@@ -45,8 +37,4 @@ p {
 
 .text_highlight {
     color: coral;
-}
-
-button:hover {
-    cursor: pointer;
 }
