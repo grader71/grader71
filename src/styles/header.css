@@ -29,7 +29,7 @@
 .account_menu:hover,
 .menu_selected:hover,
 .account_menu_selected:hover {
-    background-color: rgba(177, 177, 177, 0.114);
+    background-color: rgba(177, 177, 177, 0.455);
     transition: 250ms;
 }
 
