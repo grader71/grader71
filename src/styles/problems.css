@@ -57,3 +57,17 @@
     background-color: rgba(177, 177, 177, 0.15);
     transition: 250ms;
 }
+
+.submit_code_editor {
+    color: white;
+    background-color: #0d1117;
+    position: absolute;
+    text-align: left;
+    top: 70px;
+    left: 50px;
+    right: 50px;
+    bottom: 20px;
+    padding-top: 5px;
+    border-radius: 7px;
+    overflow: auto;
+}
