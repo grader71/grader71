@@ -6,7 +6,7 @@ import '@/styles/problems.css'
 import ProblemMenu from '../ProblemMenu'
 import CodeMirror from '@uiw/react-codemirror'
 import { langs, loadLanguage } from '@uiw/codemirror-extensions-langs'
-import { githubDark } from '@uiw/codemirror-theme-github';
+import { tokyoNight } from '@uiw/codemirror-themes-all';
 
 const Problems = ({ params } : { params: {id: string }}) => {
   const problem_id = params.id
@@ -25,8 +25,8 @@ const Problems = ({ params } : { params: {id: string }}) => {
         <Suspense><ProblemMenu problem_id={problem_id} selected='submit'/></Suspense>
         <CodeMirror
           className='submit_code_editor'
-          value="printf('hello world')"
-          theme={githubDark}
+          value={`#include <bits/stdc++.h>\n\nusing namespace std;\n\nint main() {\n\n}`}
+          theme={tokyoNight}
           extensions={[langs.cpp()]}
           onChange={(value, viewUpdate) => {
             console.log(value)
