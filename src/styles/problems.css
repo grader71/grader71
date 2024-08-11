@@ -60,14 +60,34 @@
 
 .submit_code_editor {
     color: white;
-    background-color: #0d1117;
+    background-color: #1a1b26;
     position: absolute;
     text-align: left;
     top: 70px;
     left: 50px;
     right: 50px;
-    bottom: 20px;
+    bottom: 70px;
     padding-top: 5px;
     border-radius: 7px;
     overflow: auto;
+}
+
+.submit_button {
+    background-color: #32365c;
+    color: pink;
+    font-size: 15px;
+    position: absolute;
+    right: 50px;
+    bottom: 15px;
+    height: 40px;
+    width: 100px;
+    border-radius: 7px;
+    border-style: none;
+    transition: 250ms;
+}
+
+.submit_button:hover {
+    cursor: pointer;
+    background-color: #434663;
+    transition: 250ms;
 }

@@ -5,7 +5,12 @@ body {
     font-family: "Poppins", "Prompt", Arial;
     font-weight: normal;
     text-align: center;
-    overflow: auto;
+}
+
+button {
+    font-family: "Poppins", "Prompt", Arial;
+    font-weight: bold;
+    text-align: center;
 }
 
 .width_normal {
