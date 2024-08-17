@@ -4,6 +4,7 @@ import Header from '@/components/header'
 import '@/styles/global.css'
 import '@/styles/problems.css'
 import ProblemMenu from './ProblemMenu'
+import { sql } from "@vercel/postgres"
 
 const Problems = ({ params } : { params: {id: string }}) => {
   const problem_id = params.id
@@ -13,7 +14,7 @@ const Problems = ({ params } : { params: {id: string }}) => {
       <Header selected = "Problems" username = "PakinDioxide"/>
       <p className='topic'>Problems Name <span className='small_topic'>({problem_id})</span></p>
       <div className='problems_box'>
-        <Suspense><ProblemMenu problem_id={problem_id} selected=''/></Suspense>
+        <Suspense fallback={<div>Loading...</div>}><ProblemMenu problem_id={problem_id} selected=''/></Suspense>
       </div>
     </div>
   )

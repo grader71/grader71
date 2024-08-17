@@ -61,12 +61,28 @@
 .submit_code_editor {
     color: white;
     background-color: #1a1b26;
-    position: absolute;
+    /* position: absolute; */
     text-align: left;
-    top: 70px;
-    left: 50px;
-    right: 50px;
-    bottom: 70px;
+    margin-top: 70px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    height: 450px;
+    padding-top: 5px;
+    border-radius: 7px;
+    overflow: auto;
+}
+
+.submit_input_editor,
+.submit_output_editor {
+    color: white;
+    background-color: #1a1b26;
+    text-align: left;
+    margin-top: 70px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    height: 200px;
     padding-top: 5px;
     border-radius: 7px;
     overflow: auto;
