@@ -5,6 +5,8 @@ body {
     font-family: "Poppins", "Prompt", Arial;
     font-weight: normal;
     text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 
 button {
@@ -42,4 +44,12 @@ button {
 
 .text_highlight {
     color: coral;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
 }
