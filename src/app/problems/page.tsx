@@ -80,7 +80,7 @@ const Problems = () => {
             ProblemList.map(item => {
               const href = `/problems/${item.id}`
               return (
-                <a className='problem_display' href={href}>
+                <a className='problem_display' href={href} key={item.id}>
                   <div className="problem_frame">
                     <p style={{fontSize: "20px", marginRight: "20px"}}>{item.name}</p>
                     <p style={{fontSize: "12px"}}>[{item.id}]</p>
