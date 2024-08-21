@@ -11,7 +11,8 @@ import { useSearchParams } from 'next/navigation';
 const problems = ProblemList();
 
 const Problems = () => {
-  <Suspense>const searchParams = useSearchParams();</Suspense>
+  const [searchParams, setSearchParams] = useState<string>(``);
+  <Suspense>setSearchParams(useSearchParams());</Suspense>
   const level = searchParams.get('level') || '';
   
   return (
