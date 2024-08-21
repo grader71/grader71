@@ -4,69 +4,10 @@ import Header from '@/components/header'
 import '@/styles/global.css'
 import '@/styles/problems.css'
 import Menu from './menu'
+import { ProblemList } from './ProblemList'
+import { useSearchParams } from 'next/navigation';
 
-const ProblemList = [
-  {
-    name: "ชี้(ปิ)ชี้(ปิ)กัน (Pointing)",
-    id: "pointing",
-    level: 1,
-    score: 0
-  },
-  {
-    name: "พ่อค้าคนกลาง (Stonks)",
-    id: "stonks",
-    level: 1,
-    score: 0
-  },
-  {
-    name: "Polygon",
-    id: "polygon",
-    level: 1,
-    score: 0
-  },
-  {
-    name: "Drinks",
-    id: "drinks",
-    level: 1,
-    score: 0
-  },
-  {
-    name: "Medulla",
-    id: "medulla",
-    level: 2,
-    score: 0
-  },
-  {
-    name: "Kidney Stones",
-    id: "kidney_stones",
-    level: 1,
-    score: 0
-  },
-  {
-    name: "Election",
-    id: "election",
-    level: 1,
-    score: 0
-  },
-  {
-    name: "Parentheses Key",
-    id: "parentheses_key",
-    level: 1,
-    score: 0
-  },
-  {
-    name: "Gaussian Primes",
-    id: "gaussian_primes",
-    level: 1,
-    score: 0
-  },
-  {
-    name: "Suckanigadik",
-    id: "toi69_suckanigadik",
-    level: 3,
-    score: 69
-  }
-]
+const problems = ProblemList();
 
 const Problems = () => {
   return (
@@ -77,9 +18,13 @@ const Problems = () => {
         <Suspense><Menu /></Suspense>
         <div className='problems_container'>
           {
-            ProblemList.map(item => {
+            problems.map(item => {
+              const searchParams = useSearchParams();
+              const level = searchParams.get('level') || '';
+
               const href = `/problems/${item.id}`
-              return (
+              if (level === '' || item.level == level) {
+                return (
                 <a className='problem_display' href={href} key={item.id}>
                   <div className="problem_frame">
                     <p style={{fontSize: "20px", marginRight: "20px"}}>{item.name}</p>
@@ -87,7 +32,8 @@ const Problems = () => {
                     <p style={{fontSize: "20px", textAlign: "right", flex: 1}}>{item.score}/100</p>
                   </div>
                 </a>
-              )
+                )
+              }
             })
           }
         </div>
