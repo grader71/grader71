@@ -1,3 +1,5 @@
+'use client'
+
 function ProblemList() {
     const problems = [
         {
