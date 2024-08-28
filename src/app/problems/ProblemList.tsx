@@ -41,7 +41,7 @@ function ProblemList() {
         {
           name: "Election",
           id: "election",
-          level: "camp1",
+          level: "camp2",
           score: 0
         },
         {
