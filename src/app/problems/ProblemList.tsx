@@ -35,7 +35,7 @@ function ProblemList() {
         {
           name: "Kidney Stones",
           id: "kidney_stones",
-          level: "camp1",
+          level: "camp2",
           score: 0
         },
         {
