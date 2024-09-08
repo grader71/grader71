@@ -12,31 +12,26 @@ const Run = () => {
     const [input, setInput] = useState<string>(`input`);
     const [output, setOutput] = useState<string>(`output`);
 
-    const getContents = async () => {
-        if (!contents.trim() || !input.trim() || !output.trim) {
-            alert('No code submitted');
-            return;
-        }
-        try {
-            const response = await fetch('/api/grader', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify({
-                    code: contents,
-                    input: input,
-                    output: output,
-                    mxr: 1000,
-                    mxm: 1024 * 32,
-                }),
-            });
+    const send = async () => {
+      const res = await fetch('https://grader-delta.vercel.app/api/compile', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ problem_id: "sample", code: contents}),
 
-            const data = await response.json();
-            console.log(data.msg);
-        } catch (error) {
-          console.error('ERROR:', error);
-        }
+      });
+      const result = await res.json();
+      console.log(result);
+      console.log("HI");
+    };
+
+    const getContents = async () => {
+      if (!contents.trim()) {
+        alert('No code submitted');
+        return;
+      }
+      send();
     };
 
     loadLanguage('cpp');

@@ -18,7 +18,18 @@ const Problems = ({ params }: { params: { id: string } }) => {
       alert('No code submitted');
       return;
     }
-    console.log(contents);
+    const send = async () => {
+      const res = await fetch('https://grader-delta.vercel.app/api/compile', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ problem_id: problem_id, code: contents}),
+
+      });
+      const result = await res.json();
+      console.log(result);
+    };
   };
 
   loadLanguage('cpp');
