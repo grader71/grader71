@@ -11,9 +11,10 @@ const Submissions = () => {
             <div className='submissions_box'>
                 <div className='submissions_table_head'>
                     <p style={{flex:'1'}}>#</p>
-                    <p style={{flex:'2'}}>Name</p>
-                    <p style={{flex:'2'}}>Problem</p>
-                    <p style={{flex:'2'}}>Score</p>
+                    <p style={{flex:'1.75'}}>Name</p>
+                    <p style={{flex:'1.75'}}>Problem</p>
+                    <p style={{flex:'1.75'}}>Score</p>
+                    <p style={{flex:'0.25'}}>Time</p>
                 </div>
                 <div className='submissions_container'>
                 </div>

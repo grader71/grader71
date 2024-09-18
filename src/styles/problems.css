@@ -5,6 +5,7 @@
 .problems_box {
     background-color: pink;
     align-items: center;
+    justify-content: center;
     position: absolute;
     height: 100px;
     top: 250px;
@@ -142,4 +143,12 @@
     padding-right: 50px;
     align-items: center;
     border-radius: 7px;
+}
+
+.statement_pdf {
+    width: 595px;
+    height: 832px;
+    border: 0;
+    margin-top: 70px;
+    align-self: center;
 }
